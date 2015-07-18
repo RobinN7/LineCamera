@@ -1,0 +1,447 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F26K80 ]
+[d frameptr 4065 ]
+"8 /opt/microchip/xc8/v1.34/sources/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"63 /opt/microchip/xc8/v1.34/sources/common/double.c
+[v ___flpack __flpack `(d  1 e 3 0 ]
+"88 /opt/microchip/xc8/v1.34/sources/common/fladd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"54 /opt/microchip/xc8/v1.34/sources/common/fldiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"62 /opt/microchip/xc8/v1.34/sources/common/flmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"62 /opt/microchip/xc8/v1.34/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"20 /opt/microchip/xc8/v1.34/sources/common/flsub.c
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"86 /opt/microchip/xc8/v1.34/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 /opt/microchip/xc8/v1.34/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 /opt/microchip/xc8/v1.34/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 /opt/microchip/xc8/v1.34/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"28 /opt/microchip/xc8/v1.34/sources/common/lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 /opt/microchip/xc8/v1.34/sources/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"3 /home/robin/Github/LineCamera/LineCamera.X/init.c
+[v _initialisation initialisation `(v  1 e 0 0 ]
+"24
+[v _initPWM initPWM `(v  1 e 0 0 ]
+"66
+[v _initComms initComms `(v  1 e 0 0 ]
+"94
+[v _initADC initADC `(v  1 e 0 0 ]
+"114
+[v _initTimer0 initTimer0 `(v  1 e 0 0 ]
+"7 /home/robin/Github/LineCamera/LineCamera.X/interrupts.c
+[v _Timer0_ISR Timer0_ISR `IIL(v  1 e 0 0 ]
+"25
+[v _RX2_ISR RX2_ISR `IIH(v  1 e 0 0 ]
+"91 /home/robin/Github/LineCamera/LineCamera.X/main.c
+[v _main main `(i  1 e 2 0 ]
+"117
+[v _readADC readADC `(ui  1 e 2 0 ]
+"128
+[v _readLine readLine `(v  1 e 0 0 ]
+"28420 /opt/microchip/xc8/v1.34/include/pic18f26k80.h
+[v _CCPR4L CCPR4L `VEuc  1 e 1 @3915 ]
+"28542
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @3918 ]
+"28741
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @3921 ]
+"32263
+[v _TXREG2 TXREG2 `VEuc  1 e 1 @3961 ]
+"32301
+[v _SPBRG2 SPBRG2 `VEuc  1 e 1 @3963 ]
+"32320
+[v _SPBRGH2 SPBRGH2 `VEuc  1 e 1 @3964 ]
+[s S62 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"33569
+[u S71 . 1 `S62 1 . 1 0 ]
+"33569
+"33569
+[v _TRISBbits TRISBbits `VES71  1 e 1 @3987 ]
+"33613
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S350 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP1IE 1 0 :1:1 
+`uc 1 CCP2IE 1 0 :1:2 
+`uc 1 CTMUIE 1 0 :1:3 
+`uc 1 TX2IE 1 0 :1:4 
+`uc 1 RC2IE 1 0 :1:5 
+]
+"34323
+[s S357 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+]
+"34323
+[s S360 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+]
+"34323
+[s S363 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TXB0IE 1 0 :1:2 
+]
+"34323
+[s S366 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 TXB1IE 1 0 :1:3 
+]
+"34323
+[s S369 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+"34323
+[s S372 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+"34323
+[u S375 . 1 `S350 1 . 1 0 `S357 1 . 1 0 `S360 1 . 1 0 `S363 1 . 1 0 `S366 1 . 1 0 `S369 1 . 1 0 `S372 1 . 1 0 ]
+"34323
+"34323
+[v _PIE3bits PIE3bits `VES375  1 e 1 @4003 ]
+[s S486 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP1IF 1 0 :1:1 
+`uc 1 CCP2IF 1 0 :1:2 
+`uc 1 CTMUIF 1 0 :1:3 
+`uc 1 TX2IF 1 0 :1:4 
+`uc 1 RC2IF 1 0 :1:5 
+]
+"34405
+[s S493 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+]
+"34405
+[s S496 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+"34405
+[u S499 . 1 `S486 1 . 1 0 `S493 1 . 1 0 `S496 1 . 1 0 ]
+"34405
+"34405
+[v _PIR3bits PIR3bits `VES499  1 e 1 @4004 ]
+[s S138 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"34544
+[s S147 . 1 `uc 1 RX9D2 1 0 :1:0 
+`uc 1 OERR2 1 0 :1:1 
+`uc 1 FERR2 1 0 :1:2 
+`uc 1 ADDEN2 1 0 :1:3 
+`uc 1 CREN2 1 0 :1:4 
+`uc 1 SREN2 1 0 :1:5 
+`uc 1 RX92 1 0 :1:6 
+`uc 1 SPEN2 1 0 :1:7 
+]
+"34544
+[s S156 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_92 1 0 :1:6 
+]
+"34544
+[s S159 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC92 1 0 :1:6 
+]
+"34544
+[s S162 . 1 `uc 1 RCD82 1 0 :1:0 
+]
+"34544
+[u S164 . 1 `S138 1 . 1 0 `S147 1 . 1 0 `S156 1 . 1 0 `S159 1 . 1 0 `S162 1 . 1 0 ]
+"34544
+"34544
+[v _RCSTA2bits RCSTA2bits `VES164  1 e 1 @4006 ]
+"36359
+[v _BAUDCON2 BAUDCON2 `VEuc  1 e 1 @4025 ]
+[s S83 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"36547
+[s S92 . 1 `uc 1 TX9D2 1 0 :1:0 
+`uc 1 TRMT2 1 0 :1:1 
+`uc 1 BRGH2 1 0 :1:2 
+`uc 1 SENDB2 1 0 :1:3 
+`uc 1 SYNC2 1 0 :1:4 
+`uc 1 TXEN2 1 0 :1:5 
+`uc 1 TX92 1 0 :1:6 
+`uc 1 CSRC2 1 0 :1:7 
+]
+"36547
+[s S101 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_92 1 0 :1:6 
+]
+"36547
+[s S104 . 1 `uc 1 TXD82 1 0 :1:0 
+]
+"36547
+[u S106 . 1 `S83 1 . 1 0 `S92 1 . 1 0 `S101 1 . 1 0 `S104 1 . 1 0 ]
+"36547
+"36547
+[v _TXSTA2bits TXSTA2bits `VES106  1 e 1 @4026 ]
+"37403
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"37422
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"38004
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+[s S197 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"38343
+[s S199 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+"38343
+[s S202 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+"38343
+[s S205 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+"38343
+[s S208 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+"38343
+[s S211 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_CM 1 0 :1:5 
+]
+"38343
+[s S214 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 nCM 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+"38343
+[s S223 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+`uc 1 CM 1 0 :1:5 
+]
+"38343
+[u S230 . 1 `S197 1 . 1 0 `S199 1 . 1 0 `S202 1 . 1 0 `S205 1 . 1 0 `S208 1 . 1 0 `S211 1 . 1 0 `S214 1 . 1 0 `S223 1 . 1 0 ]
+"38343
+"38343
+[v _RCONbits RCONbits `VES230  1 e 1 @4048 ]
+"38722
+"38722
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+[s S273 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"39554
+[s S282 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"39554
+[s S291 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+"39554
+"39554
+"39554
+[u S308 . 1 `S273 1 . 1 0 `S282 1 . 1 0 `S291 1 . 1 0 `S282 1 . 1 0 `S291 1 . 1 0 ]
+"39554
+"39554
+[v _INTCONbits INTCONbits `VES308  1 e 1 @4082 ]
+"40157
+"40157
+[v _ADON ADON `VEb  1 e 0 @32272 ]
+"40161
+[v _ANSEL1 ANSEL1 `VEb  1 e 0 @31465 ]
+"40165
+[v _ANSEL2 ANSEL2 `VEb  1 e 0 @31466 ]
+"40167
+[v _ANSEL3 ANSEL3 `VEb  1 e 0 @31467 ]
+"41729
+[v _CCP2M2 CCP2M2 `VEb  1 e 0 @31362 ]
+"41731
+[v _CCP2M3 CCP2M3 `VEb  1 e 0 @31363 ]
+"41753
+[v _CCP3M2 CCP3M2 `VEb  1 e 0 @31338 ]
+"41755
+[v _CCP3M3 CCP3M3 `VEb  1 e 0 @31339 ]
+"41775
+[v _CCP4M2 CCP4M2 `VEb  1 e 0 @31314 ]
+"41777
+[v _CCP4M3 CCP4M3 `VEb  1 e 0 @31315 ]
+"41819
+[v _CHS0 CHS0 `VEb  1 e 0 @32274 ]
+"41943
+[v _DC2B0 DC2B0 `VEb  1 e 0 @31364 ]
+"41945
+[v _DC2B1 DC2B1 `VEb  1 e 0 @31365 ]
+"41947
+[v _DC3B0 DC3B0 `VEb  1 e 0 @31340 ]
+"41949
+[v _DC3B1 DC3B1 `VEb  1 e 0 @31341 ]
+"41951
+[v _DC4B0 DC4B0 `VEb  1 e 0 @31316 ]
+"41953
+[v _DC4B1 DC4B1 `VEb  1 e 0 @31317 ]
+"42293
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"42309
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @32273 ]
+"42691
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"42709
+[v _PSA PSA `VEb  1 e 0 @32427 ]
+"42721
+[v _RA0 RA0 `VEb  1 e 0 @31744 ]
+"42723
+[v _RA1 RA1 `VEb  1 e 0 @31745 ]
+"42775
+[v _RC2IF RC2IF `VEb  1 e 0 @32037 ]
+"44623
+[v _T08BIT T08BIT `VEb  1 e 0 @32430 ]
+"44625
+[v _T0CS T0CS `VEb  1 e 0 @32429 ]
+"44627
+[v _T0IE T0IE `VEb  1 e 0 @32661 ]
+"44629
+[v _T0IF T0IF `VEb  1 e 0 @32658 ]
+"44633
+[v _T0PS0 T0PS0 `VEb  1 e 0 @32424 ]
+"44635
+[v _T0PS1 T0PS1 `VEb  1 e 0 @32425 ]
+"44637
+[v _T0PS2 T0PS2 `VEb  1 e 0 @32426 ]
+"44667
+[v _T2CKPS0 T2CKPS0 `VEb  1 e 0 @32336 ]
+"44669
+[v _T2CKPS1 T2CKPS1 `VEb  1 e 0 @32337 ]
+"44733
+[v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
+"44737
+[v _TMR0IP TMR0IP `VEb  1 e 0 @32650 ]
+"44773
+[v _TMR2ON TMR2ON `VEb  1 e 0 @32338 ]
+"44809
+[v _TRIGSEL0 TRIGSEL0 `VEb  1 e 0 @32270 ]
+"44811
+[v _TRIGSEL1 TRIGSEL1 `VEb  1 e 0 @32271 ]
+"45603
+[v _VCFG0 VCFG0 `VEb  1 e 0 @32268 ]
+"45607
+[v _VCFG1 VCFG1 `VEb  1 e 0 @32269 ]
+"45613
+[v _VNCFG VNCFG `VEb  1 e 0 @32267 ]
+"5 /home/robin/Github/LineCamera/LineCamera.X/interrupts.c
+[v _millis millis `l  1 e 4 0 ]
+"89 /home/robin/Github/LineCamera/LineCamera.X/main.c
+[v _line line `[128]d  1 e 384 0 ]
+"91
+[v _main main `(i  1 e 2 0 ]
+{
+"105
+} 0
+"128
+[v _readLine readLine `(v  1 e 0 0 ]
+{
+"149
+[v readLine@tempo tempo `ui  1 a 2 43 ]
+"131
+[v readLine@compteur compteur `uc  1 a 1 46 ]
+[v readLine@index_pixel index_pixel `uc  1 a 1 45 ]
+[v readLine@capture_finie capture_finie `uc  1 a 1 42 ]
+"157
+} 0
+"117
+[v _readADC readADC `(ui  1 e 2 0 ]
+{
+"119
+[v readADC@tempo tempo `uc  1 a 1 35 ]
+"126
+} 0
+"28 /opt/microchip/xc8/v1.34/sources/common/lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 39 ]
+"31
+} 0
+"62 /opt/microchip/xc8/v1.34/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 31 ]
+[v ___ftpack@exp exp `uc  1 p 1 34 ]
+[v ___ftpack@sign sign `uc  1 p 1 35 ]
+"86
+} 0
+"3 /home/robin/Github/LineCamera/LineCamera.X/init.c
+[v _initialisation initialisation `(v  1 e 0 0 ]
+{
+"21
+} 0
+"114
+[v _initTimer0 initTimer0 `(v  1 e 0 0 ]
+{
+"129
+} 0
+"24
+[v _initPWM initPWM `(v  1 e 0 0 ]
+{
+"63
+} 0
+"66
+[v _initComms initComms `(v  1 e 0 0 ]
+{
+"92
+} 0
+"94
+[v _initADC initADC `(v  1 e 0 0 ]
+{
+"112
+} 0
+"7 /home/robin/Github/LineCamera/LineCamera.X/interrupts.c
+[v _Timer0_ISR Timer0_ISR `IIL(v  1 e 0 0 ]
+{
+"21
+} 0
+"25
+[v _RX2_ISR RX2_ISR `IIH(v  1 e 0 0 ]
+{
+"74
+} 0
